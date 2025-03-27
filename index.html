@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord Krishna Medley</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <button class="cta-button" id="headerCta">Download Brochure</button>
+    </header>
+
+    <!-- Tour Booking Modal -->
+    <div class="modal-overlay" id="tourModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Download Brochure</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-columns">
+                    <div class="modal-image">
+                        <img src="/images/b2.webp" alt="Luxury Property">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Experience Luxury</h4>
+                                <p>Join us for a personalized tour of our premium properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form">
+                        <form id="tourForm">
+                            <div class="form-group">
+                                <label for="tourName">Full Name</label>
+                                <input type="text" id="tourName" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tourEmail">Email Address</label>
+                                <input type="email" id="tourEmail" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tourPhone">Phone Number</label>
+                                <input type="tel" id="tourPhone" placeholder="+1 (555) 123-4567" required>
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <label for="tourMessage">Special Requests</label>
+                                <textarea id="tourMessage" rows="3"
+                                    placeholder="Any specific requirements or questions?"></textarea>
+                            </div> -->
+                            <button type="submit" class="modal-cta">Book Your Tour</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Banner Slider -->
+    <section id="home" class="hero-slider">
+        <img src="/images/medley.png" alt="Company Logo" class="hero-logo">
+        <div class="rera-number">RERA No: UPRERAPRJ639080</div>
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="/images/g2.jpeg" alt="Luxury Home Exterior">
+                <div class="info-box">
+                    <h2>Premium Food Court Space</h2>
+                    <p>Starting from ₹ 61.60 Lakh</p>
+                    <button class="info-cta">Investment Starts from ₹ 61.60 Lakhs*</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/images/g1.jpeg" alt="Modern Interior">
+                <div class="info-box">
+                    <h2>Payment Plan</h2>
+                    <p>Pay 75% Now & Rest on Possession</p>
+                    <button class="info-cta">Investment Starts from ₹ 61.60 Lakhs*</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/images/g3.jpeg" alt="Luxury Pool">
+                <div class="info-box">
+                    <h2>Possession Status</h2>
+                    <p>Possession in June 2025</p>
+                    <button class="info-cta">Investment Starts from ₹ 61.60 Lakhs*</button>
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section id="projects" class="project-overview">
+        <div class="section-title">
+            <h2>Our Signature Project</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="overview-container">
+            <div class="overview-image">
+                <img src="/images/g3.jpeg" alt="Project Overview" class="zoomable-img">
+            </div>
+            <div class="overview-content">
+                <h3>Lord Krishna Medlley - The Ultimate Food Court Investment at Yamuna Expressway</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> A Food Lover's Paradise, An Investor's
+                    Goldmine!</p>
+                <p class="description">
+                    Located at the heart of Yamuna Expressway, Lord Krishna Medlley brings a high-footfall Food Court
+                    designed for success. With a strategic location near residential hubs, educational institutions, and
+                    major developments, this is the perfect opportunity for restaurant brands, food startups, and
+                    investors to Buy a food Court Space in a booming market. <br> <br>
+                    Why Invest in Our Food Court? <br> <br>
+                    <strong>Unmatched Location</strong> - Premium Location of Yamuna Expressway <br>
+                    <strong>Guaranteed Footfall</strong> - Travelers, students, and locals all in one place <br>
+                    <strong>Modern Infrastructure</strong> - Fully equipped spaces for seamless operations <br> <br>
+                    <strong>High ROI Potential</strong> - A lucrative food & beverage market awaits
+                    This is your chance to own a food outlet in the fastest-growing corridor of NCR. Join the food
+                    revolution at Lord Krishna Medlley - Where Taste Meets Business!
+
+
+                </p>
+                <!-- <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> Premium 2, 3 & 4 BHK Residences</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Security & Concierge</li>
+                    <li><i class="fas fa-check-circle"></i> Rooftop Infinity Pool</li>
+                    <li><i class="fas fa-check-circle"></i> State-of-the-art Fitness Center</li>
+                    <li><i class="fas fa-check-circle"></i> Private Theater & Lounge</li>
+                </ul> -->
+                <button class="overview-cta">Book Your Space Now!</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Price Breakup Section -->
+    <section id="pricing" class="price-breakup">
+        <div class="section-title">
+            <h2>Transparent Pricing</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-table-container">
+                <div class="pricing-header">
+                    <div class="pricing-tabs">
+                        <div class="pricing-tab active" data-tab="table">Price Table</div>
+                        <div class="pricing-tab" data-tab="details">Detailed Breakdown</div>
+                    </div>
+                </div>
+
+                <div class="pricing-content">
+                    <!-- Table View -->
+                    <div class="pricing-tab-content active" id="table">
+                        <div class="price-table">
+                            <div class="table-header">
+                                <div class="table-cell">Type</div>
+                                <div class="table-cell">Area</div>
+                                <div class="table-cell">Price</div>
+                                <div class="table-cell">Details</div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <span class="cell-title">Food Court</span>
+                                    <span class="cell-subtitle">Commercial Space</span>
+                                </div>
+                                <div class="table-cell">280 Sq.ft.</div>
+                                <div class="table-cell">
+                                    <span class="price-amount">₹ 61.60 Lacs*</span>
+                                    <span class="price-note">Onwards</span>
+                                </div>
+                                <div class="table-cell">
+                                    <button class="price-detail-btn" data-floor="lower">Price Breakup</button>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <span class="cell-title">Food Court</span>
+                                    <span class="cell-subtitle">Commercial Space</span>
+                                </div>
+                                <div class="table-cell">310 Sq.ft.</div>
+                                <div class="table-cell">
+                                    <span class="price-amount">₹ 68.00 Lacs*</span>
+                                    <span class="price-note">Onwards</span>
+                                </div>
+                                <div class="table-cell">
+                                    <button class="price-detail-btn" data-floor="upper">Price Breakup</button>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <span class="cell-title">Food Court</span>
+                                    <span class="cell-subtitle">Commercial Space</span>
+                                </div>
+                                <div class="table-cell">345 Sq.ft.</div>
+                                <div class="table-cell">
+                                    <span class="price-amount">₹ 75.90 Lacs*</span>
+                                    <span class="price-note">Onwards</span>
+                                </div>
+                                <div class="table-cell">
+                                    <button class="price-detail-btn" data-floor="first">Price Breakup</button>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <span class="cell-title">Food Court</span>
+                                    <span class="cell-subtitle">Commercial Space</span>
+                                </div>
+                                <div class="table-cell">375 Sq.ft.</div>
+                                <div class="table-cell">
+                                    <span class="price-amount">₹ 82.50 Lacs*</span>
+                                    <span class="price-note">Onwards</span>
+                                </div>
+                                <div class="table-cell">
+                                    <button class="price-detail-btn" data-floor="second">Price Breakup</button>
+                                </div>
+                            </div>
+
+                            <!-- <div class="table-row">
+                                <div class="table-cell">
+                                    <span class="cell-title">Third Floor</span>
+                                    <span class="cell-subtitle">Food Court</span>
+                                </div>
+                                <div class="table-cell">300 Sq.ft.</div>
+                                <div class="table-cell">
+                                    <span class="price-amount">₹ 60 Lacs*</span>
+                                    <span class="price-note">Onwards</span>
+                                </div>
+                                <div class="table-cell">
+                                    <button class="price-detail-btn" data-floor="third">Price Breakup</button>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="price-note-container">
+                            <p>* Prices are subject to change without prior notice. Additional charges for premium
+                                locations, corner units, and maintenance may apply.</p>
+                            <button class="download-price-btn">
+                                <i class="fas fa-download"></i> Download Complete Price List
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Breakdown View -->
+                    <div class="pricing-tab-content" id="details">
+                        <div class="price-breakdown-container">
+                            <div class="breakdown-image">
+                                <img src="/images/price-list.png" alt="Complete Price Breakdown" class="zoomable-img">
+                                <div class="image-overlay">
+                                    <span>Click to enlarge</span>
+                                </div>
+                            </div>
+                            <div class="breakdown-details">
+                                <h3>Complete Costing Details</h3>
+                                <p>LORD KRISHNA medley offers premium commercial spaces with transparent pricing. The
+                                    detailed price breakdown includes:</p>
+
+                                <div class="breakdown-list">
+                                    <div class="breakdown-item">
+                                        <div class="item-icon"><i class="fas fa-building"></i></div>
+                                        <div class="item-content">
+                                            <h4>Basic Cost</h4>
+                                            <p>Base price per square foot varies by floor level</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="breakdown-item">
+                                        <div class="item-icon"><i class="fas fa-bolt"></i></div>
+                                        <div class="item-content">
+                                            <h4>Power Backup</h4>
+                                            <p>Included in the package with specified capacity</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="breakdown-item">
+                                        <div class="item-icon"><i class="fas fa-car"></i></div>
+                                        <div class="item-content">
+                                            <h4>Parking Charges</h4>
+                                            <p>Allocated parking spaces with associated costs</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="breakdown-item">
+                                        <div class="item-icon"><i class="fas fa-tools"></i></div>
+                                        <div class="item-content">
+                                            <h4>Maintenance</h4>
+                                            <p>Annual maintenance fees and what they cover</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="breakdown-item">
+                                        <div class="item-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                                        <div class="item-content">
+                                            <h4>Legal Charges</h4>
+                                            <p>Registration, stamp duty and legal documentation fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-cta">
+                                    <button class="schedule-visit-btn">Schedule Site Visit</button>
+                                    <button class="download-brochure-btn">Download Brochure</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Price Breakup Modal -->
+            <!-- <div class="price-modal" id="priceModal">
+                <div class="price-modal-content">
+                    <span class="close-price-modal">&times;</span>
+                    <div class="price-modal-header">
+                        <h3>Detailed Price Breakup</h3>
+                        <p class="modal-floor-title">Lower Ground Floor - 300 Sq.ft.</p>
+                    </div>
+                    <div class="price-modal-body">
+                        <div class="price-detail-table">
+                            <div class="detail-row">
+                                <div class="detail-label">Basic Cost</div>
+                                <div class="detail-value">₹ 65,00,000</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">GST (18%)</div>
+                                <div class="detail-value">₹ 11,70,000</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Power Backup Charges</div>
+                                <div class="detail-value">₹ 75,000</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Maintenance Deposit</div>
+                                <div class="detail-value">₹ 50,000</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-label">Legal Documentation</div>
+                                <div class="detail-value">₹ 25,000</div>
+                            </div>
+                            <div class="detail-row total">
+                                <div class="detail-label">Total Cost</div>
+                                <div class="detail-value">₹ 78,20,000</div>
+                            </div>
+                        </div>
+
+                        <div class="payment-schedule">
+                            <h4>Payment Schedule</h4>
+                            <div class="schedule-row">
+                                <div class="schedule-stage">Booking Amount</div>
+                                <div class="schedule-percent">10%</div>
+                                <div class="schedule-amount">₹ 7,82,000</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="schedule-stage">On Agreement</div>
+                                <div class="schedule-percent">40%</div>
+                                <div class="schedule-amount">₹ 31,28,000</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="schedule-stage">On Completion of Structure</div>
+                                <div class="schedule-percent">25%</div>
+                                <div class="schedule-amount">₹ 19,55,000</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="schedule-stage">On Possession</div>
+                                <div class="schedule-percent">25%</div>
+                                <div class="schedule-amount">₹ 19,55,000</div>
+                            </div>
+                        </div>
+
+                        <div class="modal-note">
+                            <p>* Prices mentioned are indicative and subject to change. Additional charges may apply for
+                                premium locations and corner units.</p>
+                        </div>
+
+                        <div class="modal-cta">
+                            <button class="modal-enquire-btn">Enquire Now</button>
+                            <button class="modal-download-btn">Download Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Master Plan Section -->
+    <section class="master-plan">
+        <div class="section-title">
+            <h2>Master Plan</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="master-plan-container">
+            <div class="plan-item">
+                <div class="plan-image">
+                    <img src="/images/location-map.jpeg" alt="Site Plan" class="zoomable-img">
+                </div>
+                <h3>Site Layout</h3>
+                <p>Comprehensive view of the entire development showcasing the strategic placement of residential
+                    towers, amenities, and green spaces.</p>
+            </div>
+            <div class="plan-item">
+                <div class="plan-image">
+                    <img src="/images/floor-plan.jpeg" alt="Amenities Plan" class="zoomable-img">
+                </div>
+                <h3>Master Plan</h3>
+                <p>Detailed plan highlighting the location of premium amenities including the clubhouse, swimming pool,
+                    gardens, and recreational areas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section id="gallery" class="project-gallery">
+        <div class="section-title">
+            <h2>Project Gallery</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-src="/images/g1.jpeg">
+                <img src="/images/g1.jpeg" alt="Exterior View">
+                <div class="gallery-overlay">
+                    <span>Exterior View</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-src="/images/g2.jpeg">
+                <img src="/images/g2.jpeg" alt="Exterior View">
+                <div class="gallery-overlay">
+                    <span>Exterior View</span>
+                </div>
+            </div>
+
+            <div class="gallery-item mobile-hidden" data-src="/images/g3.jpeg">
+                <img src="/images/g4.jpeg" alt="Kitchen">
+                <div class="gallery-overlay">
+                    <span>Kitchen</span>
+                </div>
+            </div>
+            <div class="gallery-item mobile-hidden" data-src="/images/g4.jpeg">
+                <img src="/images/g5.jpeg" alt="Kitchen">
+                <div class="gallery-overlay">
+                    <span>Kitchen</span>
+                </div>
+            </div>
+            <div class="gallery-item mobile-hidden" data-src="/images/g5.jpeg">
+                <img src="/images/g3.jpeg" alt="Kitchen">
+                <div class="gallery-overlay">
+                    <span>Kitchen</span>
+                </div>
+            </div>
+            <div class="gallery-item mobile-hidden" data-src="/images/g6.jpeg">
+                <img src="/images/g11.jpeg" alt="Kitchen">
+                <div class="gallery-overlay">
+                    <span>Kitchen</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-toggle-container">
+            <button class="view-toggle-btn">View More <i class="fas fa-chevron-down"></i></button>
+        </div>
+    </section>
+
+    <!-- Layout Plan Section -->
+    <section class="layout-plan">
+        <div class="section-title">
+            <h2>Floor Plans</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="layout-grid">
+            <div class="layout-item" data-src="/images/fp1.jpeg">
+                <img src="/images/fp1.jpeg" alt="2 BHK Floor Plan">
+                <div class="layout-overlay">
+                    <!-- <span>2 BHK - 1,200 sq.ft.</span> -->
+                </div>
+            </div>
+            <div class="layout-item" data-src="/images/fp2.jpeg">
+                <img src="/images/fp2.jpeg" alt="2 BHK Floor Plan">
+                <div class="layout-overlay">
+                    <!-- <span>2 BHK - 1,200 sq.ft.</span> -->
+                </div>
+            </div>
+
+            <div class="layout-item mobile-hidden" data-src="/images/fp3.jpeg">
+                <img src="/images/fp3.jpeg" alt="4 BHK Floor Plan">
+                <div class="layout-overlay">
+                    <!-- <span>4 BHK - 2,500 sq.ft.</span> -->
+                </div>
+            </div>
+            <div class="layout-item mobile-hidden" data-src="/images/fp4.jpeg">
+                <img src="/images/fp4.jpeg" alt="4 BHK Floor Plan">
+                <div class="layout-overlay">
+                    <!-- <span>4 BHK - 2,500 sq.ft.</span> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="view-toggle-container">
+            <button class="view-toggle-btn floor-toggle">View More <i class="fas fa-chevron-down"></i></button>
+        </div>
+    </section>
+
+    <!-- Video Showcase Section -->
+    <section id="video" class="video-showcase">
+        <div class="video-background">
+            <div class="video-overlay"></div>
+            <div class="video-content">
+                <div class="section-title light">
+                    <h2>Experience The Luxury</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <div class="video-player">
+                            <div class="video-placeholder" id="videoPlaceholder">
+                                <video src="/images/preview.mp4" autoplay muted controls loop></video>
+
+                            </div>
+
+                        </div>
+                        <div class="video-info">
+                            <div class="video-tabs">
+                                <div class="tab active" data-tab="overview">Overview</div>
+                                <div class="tab" data-tab="features">Features</div>
+                                <div class="tab" data-tab="amenities">Amenities</div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="overview">
+                                    <h3>Project Overview</h3>
+                                    <p>Step into the future of retail with a virtual tour of Lord Krishna medley, a
+                                        premium commercial project at Yamuna Expressway! Explore modern shops, spacious
+                                        layouts, and top-tier amenities—all from the comfort of your screen. Discover
+                                        unmatched convenience, strategic location, and vibrant business opportunities.
+                                        Your next investment awaits—virtually!</p>
+                                    <ul class="video-highlights">
+                                        <li><i class="fas fa-film"></i> 360° Digital Experience</li>
+                                        <li><i class="fas fa-clock"></i> Smedley Investment Preview</li>
+                                        <li><i class="fas fa-eye"></i> Instant Access</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="features">
+                                    <h3>Key Features</h3>
+                                    <p>Lord Krishna medley redefines commercial excellence with cutting-edge
+                                        infrastructure and unmatched convenience. Designed for businesses, this project
+                                        offers a perfect blend of strategic location, modern amenities, and
+                                        investor-friendly features—making it the ideal destination for shops, and retail
+                                        ventures.</p>
+                                    <ul class="video-highlights">
+                                        <li><i class="fas fa-check-circle"></i> Prime Location</li>
+                                        <li><i class="fas fa-check-circle"></i> Modern infrastructure</li>
+                                        <li><i class="fas fa-check-circle"></i> Top-Tier Amenities</li>
+                                        <li><i class="fas fa-check-circle"></i> High ROI Potential </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="amenities">
+                                    <h3>Luxury Amenities</h3>
+                                    <p>Lord Krishna medley offers world-class amenities for a seamless business
+                                        experience</p>
+                                    <ul class="video-highlights">
+                                        <li><i class="fas fa-swimming-pool"></i> Proposed Metro Station </li>
+                                        <li><i class="fas fa-dumbbell"></i>24x7 Security</li>
+                                        <li><i class="fas fa-glass-cheers"></i> Firefighting System </li>
+                                        <li><i class="fas fa-spa"></i> Spa & wellness center</li>
+                                        <li><i class="fas fa-spa"></i>Parking</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section id="location" class="location-section">
+        <div class="section-title">
+            <h2>Prime Location</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="location-container">
+            <div class="location-info">
+                <div class="location-card">
+                    <!-- <div class="card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div> -->
+                    <h3>Strategic Positioning</h3>
+                    <p>Lord Krishna medley enjoys a prime position on Yamuna Expressway - NCR's fastest-growing economic
+                        corridor with seamless connectivity to Jewar Airport and Delhi.</p>
+
+                    <div class="proximity-list">
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="proximity-details">
+                                <h4>Jewar International Airport </h4>
+                                <p>Only 15 min Away from project</p>
+                            </div>
+                        </div>
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="proximity-details">
+                                <h4>Film City </h4>
+                                <p>Only 10 min away from Project</p>
+                            </div>
+                        </div>
+                        <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="proximity-details">
+                                <h4>Institutional Hub </h4>
+                                <p>Surrounded by International School & Universities
+                                    Residential Hub
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="proximity-item">
+                            <div class="proximity-icon">
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                            <div class="proximity-details">
+                                <h4>Airport</h4>
+                                <p>International Airport - 25 mins</p>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <button class="location-cta">Get Directions</button>
+                </div>
+            </div>
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <div class="map-frame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.7840795015222!2d77.5562426749447!3d28.304864198885955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc706a2a26d63%3A0xad02081c48092744!2sLord%20Krishna%20Medlley!5e0!3m2!1sen!2sin!4v1743072541875!5m2!1sen!2sin" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- <div class="map-markers">
+                        <div class="map-marker" style="top: 40%; left: 50%;">
+                            <div class="marker-dot"></div>
+                            <div class="marker-pulse"></div>
+                            <div class="marker-label">Parkview Heights</div>
+                        </div>
+                        <div class="map-marker" style="top: 30%; left: 60%;">
+                            <div class="marker-dot small"></div>
+                            <div class="marker-label small">Metro Mall</div>
+                        </div>
+                        <div class="map-marker" style="top: 50%; left: 65%;">
+                            <div class="marker-dot small"></div>
+                            <div class="marker-label small">City Hospital</div>
+                        </div>
+                        <div class="map-marker" style="top: 60%; left: 45%;">
+                            <div class="marker-dot small"></div>
+                            <div class="marker-label small">International School</div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div class="map-controls">
+                    <button class="map-control-btn" id="zoomIn"><i class="fas fa-plus"></i></button>
+                    <button class="map-control-btn" id="zoomOut"><i class="fas fa-minus"></i></button>
+                    <button class="map-control-btn" id="fullscreen"><i class="fas fa-expand"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <button class="lightbox-nav prev-img"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next-img"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+
+
+    <!-- Lead Form (Sticky) -->
+    <div class="lead-form-container">
+        <div class="lead-form">
+            <div class="form-header">
+                <h3>Interested in this property?</h3>
+                <p>Fill out the form below and we'll get back to you</p>
+            </div>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="form-cta">Get Details</button>
+            </form>
+        </div>
+        <button class="toggle-form">
+            <span class="open-text">Enquire Now</span>
+            <span class="close-text">Close</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/medley.png" alt="">
+                <p>Redefining luxury living since 2005</p>
+            </div>
+            <!-- <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div> -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> At Yamuna Expressway, Greater Noida</p>
+                <a href="tel:+919206001002"><i class="fas fa-phone"></i> +91 9206-001-002</a>
+                <a href="mailto:sales@lordkrishnamedley.com"><i class="fas fa-envelope"></i>
+                    sales@lordkrishnamedley.com</a>
+            </div>
+            <!-- <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div> -->
+
+            <div class="footer-bottom">
+                <p>For Photos, Layouts and Maps – The Pictures and details are tentative depictions only. This is not a
+                    legal offer.
+                    Mentioned features are indicative and are subject to change without any prior notice as may be
+                    decided by the company or competent authority Terms and Conditions Apply. Special Scheme by the
+                    developer.1sq Mtr =10.764 Sq. Ft & 1sq.
+                    Yd. = 9 Sq. feet. This is not the official website of developer & property, it belongs to authorised
+                    channel partner for
+                    information purpose only.
+                </p>
+                <p>&copy;Copyright 2024, all right reserved with Channel Partner. Terms & Conditions | Privacy Policy|
+                    Designed and Developed by <a href="https://sysneticindia.com/"><img src="/images/syslogo.png"
+                            alt=""></a></p>
+            </div>
+        </div>
+        <!-- <div class="footer-bottom">
+            <p>&copy; 2023 Lord Krishan medley. All Rights Reserved.</p>
+        </div> -->
+        <div class="mobile-sticky-buttons">
+            <a href="https://wa.me/15551234567" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="tel:+15551234567" class="call-button">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
