@@ -46,7 +46,7 @@
             <div class="modal-body">
                 <div class="modal-columns">
                     <div class="modal-image">
-                        <img src="/images/b2.webp" alt="Luxury Property">
+                        <img src="/images/g4.jpeg" alt="Luxury Property">
                         <div class="image-overlay">
                             <div class="overlay-content">
                                 <h4>Experience Luxury</h4>
@@ -74,7 +74,7 @@
                                 <textarea id="tourMessage" rows="3"
                                     placeholder="Any specific requirements or questions?"></textarea>
                             </div> -->
-                            <button type="submit" class="modal-cta">Book Your Tour</button>
+                            <button type="submit" class="modal-cta">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -99,14 +99,14 @@
                 <img src="/images/g1.jpeg" alt="Modern Interior">
                 <div class="info-box">
                     <h2>Payment Plan</h2>
-                    <p>Pay 75% Now & Rest on Possession</p>
+                    <p>Special Payment Plan 50:50</p>
                     <button class="info-cta">Investment Starts from ₹ 61.60 Lakhs*</button>
                 </div>
             </div>
             <div class="slide">
                 <img src="/images/g3.jpeg" alt="Luxury Pool">
                 <div class="info-box">
-                    <h2>Possession Status</h2>
+                    <h2>Possession Soon</h2>
                     <p>Possession in June 2025</p>
                     <button class="info-cta">Investment Starts from ₹ 61.60 Lakhs*</button>
                 </div>
@@ -145,7 +145,7 @@
                     <li><i class="fas fa-check-circle"></i> Connectivity to Film City & Jewar International Airport</li>
                     <li><i class="fas fa-check-circle"></i> Prime Location of Yamuna Expressway</li>
                     <li><i class="fas fa-check-circle"></i> Footfall of 17000 Residents & Local</li>
-                    <!-- <li><i class="fas fa-check-circle"></i> Private Theater & Lounge</li> -->
+
                 </ul>
                 <button class="overview-cta">Book Your Space Now!</button>
             </div>
@@ -156,7 +156,7 @@
     <!-- Price Breakup Section -->
     <section id="pricing" class="price-breakup">
         <div class="section-title">
-            <h2>Transparent Pricing</h2>
+            <h2>A Smart Investment for the Future</h2>
             <div class="title-underline"></div>
         </div>
         <div class="pricing-container">
@@ -416,17 +416,17 @@
                 <div class="plan-image">
                     <img src="/images/location-map.jpeg" alt="Site Plan" class="zoomable-img">
                 </div>
-                <h3>Site Layout</h3>
-                <p>Comprehensive view of the entire development showcasing the strategic placement of residential
-                    towers, amenities, and green spaces.</p>
+                <h3>Location Map</h3>
+                <!-- <p>Comprehensive view of the entire development showcasing the strategic placement of residential
+                    towers, amenities, and green spaces.</p> -->
             </div>
             <div class="plan-item">
                 <div class="plan-image">
                     <img src="/images/floor-plan.jpeg" alt="Amenities Plan" class="zoomable-img">
                 </div>
                 <h3>Master Plan</h3>
-                <p>Detailed plan highlighting the location of premium amenities including the clubhouse, swimming pool,
-                    gardens, and recreational areas.</p>
+                <!-- <p>Detailed plan highlighting the location of premium amenities including the clubhouse, swimming pool,
+                    gardens, and recreational areas.</p> -->
             </div>
         </div>
     </section>
@@ -527,7 +527,7 @@
             <div class="video-overlay"></div>
             <div class="video-content">
                 <div class="section-title light">
-                    <h2>Experience The Luxury</h2>
+                    <h2>Unveiling a New Era of Retail and Leisure</h2>
                     <div class="title-underline"></div>
                 </div>
                 <div class="video-container">
@@ -543,7 +543,7 @@
                             <div class="video-tabs">
                                 <div class="tab active" data-tab="overview">Overview</div>
                                 <div class="tab" data-tab="features">Features</div>
-                                <div class="tab" data-tab="amenities">Amenities</div>
+                                <div class="tab" data-tab="amenities">Highlights</div>
                             </div>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="overview">
@@ -574,14 +574,14 @@
                                     </ul>
                                 </div>
                                 <div class="tab-pane" id="amenities">
-                                    <h3>Luxury Amenities</h3>
+                                    <h3>Project Highlights</h3>
                                     <p>Lord Krishna medley offers world-class amenities for a seamless business
                                         experience</p>
                                     <ul class="video-highlights">
                                         <li><i class="fas fa-swimming-pool"></i> Proposed Metro Station </li>
                                         <li><i class="fas fa-dumbbell"></i>24x7 Security</li>
                                         <li><i class="fas fa-glass-cheers"></i> Firefighting System </li>
-                                        <li><i class="fas fa-spa"></i> Spa & wellness center</li>
+                                        <li><i class="fas fa-spa"></i> Landscape Plaza</li>
                                         <li><i class="fas fa-spa"></i>Parking</li>
                                     </ul>
                                 </div>
@@ -634,9 +634,7 @@
                             </div>
                             <div class="proximity-details">
                                 <h4>Institutional Hub </h4>
-                                <p>Surrounded by International School & Universities
-                                    Residential Hub
-                                </p>
+                                <p>International School & Universities</p>
                             </div>
                         </div>
                         <!-- <div class="proximity-item">
@@ -717,9 +715,9 @@
                 <div class="form-group">
                     <input type="tel" id="phone" placeholder="Your Phone Number" required>
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <textarea id="message" placeholder="Your Message" rows="3"></textarea>
-                </div>
+                </div> -->
                 <button type="submit" class="form-cta">Get Details</button>
             </form>
         </div>
@@ -794,6 +792,123 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        // Select both forms
+        const leadForm = document.getElementById('leadForm');
+        const broachurForm = document.querySelector('.modal-form');
+    
+        // Success and error message elements
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+    
+        // Function to create loader
+        function createLoader(form) {
+            // Remove existing loader if any
+            const existingLoader = form.querySelector('.form-loader');
+            if (existingLoader) {
+                existingLoader.remove();
+            }
+    
+            // Create loader element
+            const loader = document.createElement('div');
+            loader.classList.add('form-loader');
+            loader.innerHTML = `
+                <div class="loader-spinner">
+                    <div class="spinner"></div>
+                </div>
+            `;
+            
+            // Append loader to form
+            form.appendChild(loader);
+            return loader;
+        }
+    
+        // Function to remove loader
+        function removeLoader(form) {
+            const loader = form.querySelector('.form-loader');
+            if (loader) {
+                loader.remove();
+            }
+        }
+    
+        // Function to show flash message
+        function showFlashMessage(type, message) {
+            const messageElement = type === 'success' ? successMessage : errorMessage;
+            messageElement.textContent = message;
+            messageElement.style.display = 'block';
+            
+            // Automatically hide the message after 5 seconds
+            setTimeout(() => {
+                messageElement.style.display = 'none';
+            }, 5000);
+        }
+    
+        // Handle form submission with loader
+        function handleFormSubmission(form) {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+    
+                // Disable submit button and show loader
+                const submitButton = form.querySelector('button[type="submit"]');
+                submitButton.disabled = true;
+                const loader = createLoader(form);
+    
+                const formData = new FormData(this);
+    
+                try {
+                    const response = await fetch(form.getAttribute('action'), {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: new URLSearchParams(formData).toString()
+                    });
+    
+                    const result = await response.json();
+    
+                    // Remove loader and re-enable submit button
+                    removeLoader(form);
+                    submitButton.disabled = false;
+    
+                    if (result.success) {
+                        // Special handling for brochure download
+                        if (form.getAttribute('action') === '/api/download-broachur') {
+                            // Open PDF in new tab
+                            if (result.downloadUrl) {
+                                window.open(result.downloadUrl, '_blank');
+                            }
+                        }
+    
+                        showFlashMessage('success', result.message || 'Thank you for your interest. We will get back to you shortly.');
+                        form.reset(); // Clear form fields
+    
+                        // Close modal if it's the brochure form
+                        const modal = document.getElementById('costingModal');
+                        if (modal) {
+                            modal.style.display = 'none';
+                        }
+                    } else {
+                        // Handle error case
+                        showFlashMessage('error', result.message || 'An error occurred. Please try again later.');
+                    }
+                } catch (error) {
+                    console.error('Submission error:', error);
+                    
+                    // Remove loader and re-enable submit button
+                    removeLoader(form);
+                    submitButton.disabled = false;
+    
+                    showFlashMessage('error', 'An error occurred. Please try again later.');
+                }
+            });
+        }
+    
+        // Apply form submission handler to both forms
+        if (leadForm) handleFormSubmission(leadForm);
+        if (broachurForm) handleFormSubmission(broachurForm);
+    });
+    </script>
 </body>
 
 </html>

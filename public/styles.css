@@ -1,14 +1,15 @@
 :root {
-    --primary-color: #A71E21;
-    --secondary-color: #e96668;
+    --primary-color: #006833; /* Updated for text */
+    --secondary-color: #1243A0; /* Updated for buttons */
     --light-color: #f8f9fa;
-    --dark-color: #404040;
-    --gray-color: #6c757d;
-    --light-gray: #e9ecef;
+    --dark-color: #1E2B1F; /* Adjusted to match new theme */
+    --gray-color: #4C6B50; /* Adjusted for better contrast */
+    --light-gray: #DCE8E1; /* Softer light gray */
     --transition: all 0.3s ease;
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --gradient: linear-gradient(135deg, #201f1f 0%, #404040 100%);
+    --shadow: 0 5px 15px rgba(0, 104, 51, 0.1); /* Updated shadow */
+    --shadow-dark: 0 5px 15px rgba(18, 67, 160, 0.2); /* Updated dark shadow */
+    --gradient: linear-gradient(135deg, #006833 0%, #1243A0 100%);
+
 }
 
 * {
@@ -1380,7 +1381,7 @@ video{
 
 /* Footer Styles */
 footer {
-    background-color: var(--gray-color);
+    background: var(--gradient);
     color: white;
     padding: 2rem 0 2rem;
     position: relative;
